@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.6435-9/104477836_2689279771360220_7140066759155136336_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2be8e3&_nc_eui2=AeE7TtlRj1De72utP9FNl_z0GModjzpso9oYyh2POmyj2nBNFKyD5Vt2AOzju0xkRkn-904kdYxvScNts5hJpOjD&_nc_ohc=cgSgtteth04AX8BfvDk&_nc_ht=scontent.fmnl8-2.fna&oh=00_AfAKRglXskQN3CNwY21EuH7qO5F3yS6ZKDrwHsoimYS8kA&oe=65A10F0F);
+        background-position: center;
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 40px;
+    }
+    .regform{
+        width: 800px;
+        background-color: #020001;
+        margin: auto;
+        color: #FFFFFF;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+        box-shadow: 0px -1px 20px 0px lightgreen;
+
+
+    }
+    .main{
+        background-color: rgb(0, 0, 0, 0.8);
+        width: 800px;
+        margin: auto;
+        box-shadow: 0px -1px 20px 0px lightgreen;
+    }
+    form{
+        padding: 10px;
+    }
+    #name{
+        width: 100%;
+        height: 100px;
+    }
+    .name{
+        margin-left: 25px;
+        margin-top: 30px ;
+        width: 125px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .firstname{
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        border-radius: 6px;
+        padding:0 22px;
+        font-size: 16px;
+    }
+    .lastname{
+        position: relative;
+        left: 417px;
+        top: -80px;
+        line-height: 40px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+    }
+    .firstlabel{
+        position: relative;
+        color: #E5E5E5;
+        text-transform: capitalize;
+        font-size: 14px;
+        left: 203px;
+        top: -45px;
+    }
+    .lastlabel{
+        position: relative;
+        color: #E5E5E5;
+        text-transform: capitalize;
+        font-size: 14px;
+        left: 175px;
+        top: -45px;
+    }
+    .company{
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 532px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+    }
+    .named{
+        margin-left: -385px;
+        margin-top: 35px ;
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        position: relative;
+        left: 200px;
+        top: -37px;
+    }
+    .container{
+        margin-top: -50px;
+        padding: 32px;
+
+    }
+    .email{
+        position: relative;
+        left: 105px;
+        top: 24px;
+        line-height: 40px;
+        width: 520px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+    }
+    .Name{
+        margin-left: -630px;
+        margin-top: 3px ;
+        width: 125px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+
+    }
+    .Number{
+        position: relative;
+        left: 105px;
+        top: 50px;
+        line-height: 40px;
+        width: 520px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+    }
+    .gender{
+        margin-left: -630px;
+        margin-top: 40px ;
+        width: 125px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .number{
+        position: relative;
+        left: 105px;
+        top: -20px;
+        line-height: 40px;
+        width: 520px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+    }
+    .address{
+        margin-left: -630px;
+        margin-top: 25px ;
+        width: 125px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    input[type="submit"]{
+            display: block;
+            background: none;
+            text-align: center;
+            width: 120px;
+            border: 2px solid #0ae2f3;
+            margin: 20px auto;
+            padding: 14px 10px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover{
+            background: #fe9d07;
+        }
+        input[type="reset"]{
+            display: block;
+            background: none;
+            text-align: center;
+            width: 120px;
+            border: 2px solid #0ae2f3;
+            margin: 20px auto;
+            padding: 14px 10px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        input[type="reset"]:hover{
+            background: #fe9d07;
+        }
+
+
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="regform"><h1>Registration Form</h1></div>
+    <div class="main">
+        <form action="registration(3).html">
+            <div id="name"></div>
+            <h2 class="name">Name</h2>
+            <input class="firstname" type="text" name="first_name" required="required"><br>
+            <label class="firstlabel">first name</label>
+            <input class="lastname" type="text" name="last_name" required="required">
+            <label class="lastlabel">last name</label>
+            <h2 class="name">Student Number</h2>
+            <input class="company" type="text" required="required">
+            <center><h2 class="named">Date of Birth</h2>
+                <tr> <div class="container">
+                <td><select name="Month">
+                <option value="Month">Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+                </select>
+                <select name="Day">
+                <option value="Day">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                </select>
+                <select name="Year">
+                <option value="Year">Year</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+                </td>
+                </tr>
+            </div>       
+            </center>
+            <input class="email" type="email" required="required">
+            <h2 class="Name">Email Address</h2>
+            <input class="Number" type= "text" required="required">
+            <h2 class="Name">Mobile Number</h2>
+            <h2 class="gender">Gender</h2>
+            <tr><p style="color:white"
+                <td><input type="radio" required="required" style="border:5px" name="radio"><b>Male</b><br><br> <input type="radio" name="radio"><b>Female</b>
+                </td>
+                </tr>
+                <h2 class="address">Address</h2>
+            <input class="number" type= "text" required="required">
+            <h2 class="address">City</h2>
+            <input class="number" type= "text" required="required">
+            <h2 class="address">Zip Code</h2>
+            <input class="number" type= "text" required="required">
+            <h2 class="address">Country</h2>
+                <input list="browsers" name="browser" id="browser" required="required">
+                <datalist id="browsers">
+                    <option value="Philippines">Philippines</option>
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Iran">Iran</option>
+                </datalist>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class="address">Hobbies</h2> <p style="color:white">
+                <td><input type="radio" name="radio"><b>Drawing</b> <input type="radio" name="radio"><b>Singing</b><input type="radio" name="radio"><b>Dancing</b><br>
+                     <input type="radio" name="radio"><b>Others</b><input type="text" style="border:10px" maxlength="20"/>
+                     </td>
+                     </tr>
+                     <br>
+                     <br>
+                     <input type="submit" name="Login" class="btn" value="Next">
+                     <input type="reset" name="Login" class="btn" value="Reset">
+                
+               
+                
+               
+            
+            
+
+
+        </form>
+        
+    
+    
+</body>
+</html>

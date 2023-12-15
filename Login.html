@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-image: url(https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.6435-9/104477836_2689279771360220_7140066759155136336_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2be8e3&_nc_eui2=AeE7TtlRj1De72utP9FNl_z0GModjzpso9oYyh2POmyj2nBNFKyD5Vt2AOzju0xkRkn-904kdYxvScNts5hJpOjD&_nc_ohc=cgSgtteth04AX8BfvDk&_nc_ht=scontent.fmnl8-2.fna&oh=00_AfAKRglXskQN3CNwY21EuH7qO5F3yS6ZKDrwHsoimYS8kA&oe=65A10F0F);
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        
+        }
+        .login_box{
+            width: 320px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: #111;
+            box-shadow: 0px -1px 20px 0px lightgreen;
+        }
+        .login_box h1{
+            text-align: center;
+            font-weight: 500;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+            padding: 13px 0;
+        }
+        input[type="text"], input[type="password"]{
+            display: block;
+            background: none;
+            text-align: center;
+            width: 200px;
+            border: 2px solid #0ae2f3;
+            margin: 20px auto;
+            padding: 14px 10px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        input[type="submit"]{
+            display: block;
+            background: none;
+            text-align: center;
+            width: 120px;
+            border: 2px solid #0ae2f3;
+            margin: 20px auto;
+            padding: 14px 10px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        input[type="text"]:focus, input[type="password"]:focus{
+            width: 280px;
+            border-color: #fe9d07;
+
+        }
+        input[type="submit"]:hover{
+            background: #fe9d07;
+        }
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form class="login_box" action="registration(2).html">
+        <h1>Sign In</h1>
+
+        <input type="text" name="" placeholder="Username" id="username" required= required value="">
+        <p>(max 30 characters a-z and A-Z)</p>
+
+
+        <input type="password" name="" placeholder="Password" id="password" required= required value="">
+        <p>(max 30 characters a-z and A-Z)</p>
+
+        <input type="submit" name="Login" class="btn" value="Login">
+        <p style="color: lightgreen">Prepared by: Chino Clarence D. Advincula</p>
+
+    </form>
+    
+</body>
+</html>
